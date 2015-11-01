@@ -4,15 +4,156 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap Sample</title>
+    <meta name=”keywords” content="プログラミング, ポートフォリオ, portfolio, ruby">
+    <meta name=”description” content=”Ayumi Yamoriの自己紹介およびポートフォリオページです。”>
+    <title>Ayumi's portfolio</title>
     <!-- BootstrapのCSS読み込み -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <!-- jQuery読み込み -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- BootstrapのJS読み込み -->
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <style>
+      header {
+        background-image: url(bg.jpg);
+        text-align: left;
+        height: 100px;
+      }
+      
+      body {
+        background-image: url(bg.jpg);
+      }
+      
+      .transparent {
+        background-color:	rgba(255,255,255,0.3);
+        height: 1600px;
+        padding-top: 5px;
+      }
+      
+      .title {
+        padding: 15px 30px;
+        font-size: 50px;
+        font-weight: bold;
+        color: black;
+      }
+      
+      .profile {
+        text-align: center;
+      }
+  
+      .profile h2 {
+        font-size: 24px;
+        font-weight: bold;
+      }
+      
+      .profile img {
+        max-width: 150px;
+        border-radius: 10px
+      }
+      
+      .container {
+        max-width: 800px;
+        background-color: #eee;
+        padding-bottom: 30px;
+        padding-left: 30px;
+        margin-bottom: 40px;
+        margin-top: 30px;
+      }
+      
+      .container h1 {
+        text-align: left;
+        font-weight: bold;
+        font-size: 55px;
+        color: #aaa;
+      }
+      
+      .container h2 {
+        font-size: 20px;
+        font-weight: bold;
+      }
+      
+      .about {
+        margin-top: 10px;
+      }
+      
+      footer {
+        border-top: 1px solid#e7e7e7;
+        background-color: #f8f8f8;
+        text-align: center;
+      }
+      
+      .copyright {
+        padding: 20px 0;
+        font-size: 12px;
+        color: #666;
+      }
+      
+    </style>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+   <header>
+     <div class="title">Ayumi's portfolio</div>
+   </header>
+   <div class="transparent">
+    <div class="container">
+      <h1>About</h1>
+      <div class="row">
+      <div class="profile col-sm-5">
+        <img src="Koala.jpg">
+        <h2>Ayumi Yamori</h2>
+      </div>
+      <div class="about col-sm-7">
+        <p>◆職業：会社員（Web広告営業）</p>
+        <p>◆出身：滋賀県</p>
+        <p>◆趣味：ネットサーフィン、舞台鑑賞</p>
+        <p>◆学習中の言語：Ruby on Rails</p>
+        <p>◆<a href="https://githun.com.ayamor01">Githubアカウントページ</a></p>
+      </div>
+     </div>
+    </div>
+    <div class="container">
+      <h1>Products</h1>
+      <div class="row">
+        <h2>1. メッセージボード</h2>
+        <div id="messageboard" class="col-sm-4">
+          <img src="dummy picture.jpg">
+        </div>
+        <div class="col-sm-8">
+          <p>簡単なメッセージのやりとりができるオンライン掲示板です。</p>
+        </div>
+      </div>
+      <div class="row">
+        <h2>2. Twitterクローン</h2>
+        <div id="messageboard" class="col-sm-4">
+          <img src="dummy picture.jpg">
+        </div>
+        <div class="col-sm-8">
+          <p>Twitterとほぼ同じ機能を実装したクローンサイトです。</p>
+        </div>
+      </div>
+      <div class="row">
+        <h2>3. モノリスト</h2>
+        <div id="messageboard" class="col-sm-4">
+          <img src="dummy picture.jpg">
+        </div>
+        <div class="col-sm-8">
+          <p>Amazonの商品を検索し、自分が持っているもの・欲しい物を<br>
+          リスト化して共有できる仮想サイトです。</p>
+        </div>
+      </div>
+      <div class="row">
+        <h2>4. オリジナルサービス</h2>
+        <div id="messageboard" class="col-sm-4">
+          <img src="dummy picture.jpg">
+        </div>
+        <div class="col-sm-8">
+          <p>（内容未定）</p>
+        </div>
+      </div>
+     </div>
+    </div>
+    <footer>
+      <div class="copyright">© 2015 Ayumi Yamori.</div>
+    </footer>
   </body>
 </html>
